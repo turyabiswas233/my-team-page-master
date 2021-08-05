@@ -1,0 +1,264 @@
+/*font code link*/
+@import url("https://fonts.googleapis.com/css2?family=PT+Serif:wght@700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap");
+
+* {
+  padding: 0%;
+  margin: 0%;
+  box-sizing: border-box;
+}
+
+body {
+  width: 100%;
+  background-color: #f4f4f4;
+  scroll-behavior: smooth;
+  overflow: auto;
+}
+
+/*here goes header style*/
+div.parent {
+  width: 70%;
+}
+
+div.header {
+  display: grid;
+  width: 100%;
+}
+div.header h1 {
+  margin: 0.52rem;
+  width: 100%;
+  font-family: "PT Serif", serif;
+}
+div.inform h3 {
+  width: 60%;
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  text-transform: uppercase;
+  font-size: 17px;
+  margin: 0.52em;
+}
+
+div.inform p {
+  /* display: flex; */
+  /* float: left; */
+  width: 65%;
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  margin: 0.52em;
+  font-size: 0.9em;
+}
+
+/*here ends header style*/
+/*image design*/
+div#img-container {
+  margin: 10vh auto;
+  display: grid;
+}
+div#img {
+  width: 80%;
+}
+
+img {
+  width: 70%;
+  height: auto;
+  /* display: flex; */
+}
+/* desktop version */
+@media screen and (min-width: 950px) {
+  div.parent {
+    margin: 3em auto;
+  }
+  div.header {
+    grid-template-columns: 60% 40%;
+  }
+  div#img-container {
+    grid-template-columns: auto auto auto;
+    width: 80%;
+  }
+  div.scn-img,
+  div.fth-img {
+    margin-top: 25%;
+  }
+  div.frst-img figcaption:last-child,
+  div.scn-img figcaption:last-child,
+  div.thr-img figcaption:last-child,
+  div.frth-img figcaption:last-child,
+  div.fth-img figcaption:last-child,
+  div.sth-img figcaption:last-child {
+    font-weight: 600;
+    padding-top: 10px;
+    font-family: "Poppins", sans-serif;
+  }
+
+  div.frst-img figcaption:first-child,
+  div.scn-img figcaption:first-child,
+  div.thr-img figcaption:first-child,
+  div.frth-img figcaption:first-child,
+  div.fth-img figcaption:first-child,
+  div.sth-img figcaption:first-child {
+    font-family: "PT serif", serif;
+    font-weight: 400;
+    font-size: 0.8em;
+    transform: rotate(90deg);
+    width: 100%;
+    height: 1em;
+    line-height: 1em;
+    position: relative;
+    left: 29%;
+    padding-left: 54%;
+    float: right;
+  }
+
+  /*image design*/
+}
+
+/*mobile version*/
+@media screen and (max-width: 950px) {
+  /*header design*/
+  div.parent {
+    width: 90%;
+  }
+  div.header {
+    display: block;
+    justify-content: space-between;
+    width: 100%;
+    margin-bottom: 3em;
+  }
+
+  div.header h1 {
+    margin: 0.52rem;
+    width: 100%;
+    font-family: "PT Serif", serif;
+    letter-spacing: -1.8px;
+  }
+  div.inform {
+    width: 100%;
+  }
+  div.inform h3 {
+    width: 60%;
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    text-transform: uppercase;
+    font-size: 1.1em;
+    margin: 0.52em;
+  }
+  div.inform p {
+    width: 70%;
+    min-width: 200px;
+    max-width: 350px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    margin: 0.52em;
+    font-size: 1em;
+  }
+
+  /*header design*/
+
+  /*image design*/
+  div#img-container {
+    grid-template-columns: 55% 45%;
+    width: auto;
+    margin: 2% 2.5%;
+  }
+
+  img {
+    width: 129.2px;
+    height: auto;
+    display: block;
+  }
+  /* div.frst-img,
+  div.scn-img,
+  div.thr-img,
+  div.frth-img,
+  div.fth-img div.sth-img {
+      width: 40%;
+  } */
+  div.frst-img figcaption:last-child,
+  div.scn-img figcaption:last-child,
+  div.thr-img figcaption:last-child,
+  div.frth-img figcaption:last-child,
+  div.fth-img figcaption:last-child,
+  div.sth-img figcaption:last-child {
+    font-weight: 600;
+    padding-top: 10px;
+    font-family: "Poppins", sans-serif;
+  }
+
+  div.frst-img figcaption:first-child,
+  div.scn-img figcaption:first-child,
+  div.thr-img figcaption:first-child,
+  div.frth-img figcaption:first-child,
+  div.fth-img figcaption:first-child,
+  div.sth-img figcaption:first-child {
+    font-family: "PT serif", serif;
+    font-weight: 400;
+    font-size: 0.8em;
+    transform: rotate(90deg);
+    width: 200px;
+    height: 1em;
+    line-height: 1em;
+    padding-left: 107px;
+    margin-left: 43px;
+    float: left;
+  }
+
+  div.scn-img,
+  div.frth-img,
+  div.sth-img {
+    margin-top: 25%;
+  }
+  /*image design*/
+
+  /*footer design*/
+  footer {
+    height: 1.5em;
+    color: #a9a9a9;
+    line-height: 1.5em;
+  }
+
+  footer p {
+    font-size: 0.75em;
+  }
+
+  /*footer design*/
+}
+@media only screen and (max-width: 500px) {
+  div.inform p {
+    font-size: 0.725rem;
+  }
+  footer {
+    font-size: 0.625rem;
+  }
+}
+
+/*footer design*/
+footer {
+  /* clear: left; */
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 3.5em;
+  color: #a9a9a9;
+  line-height: 3.5em;
+}
+
+footer p {
+  width: auto;
+  font-size: 1.05em;
+  font-family: "Montserrat", sans-serif;
+}
+
+footer a {
+  color: #a9a9a9;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+a:hover {
+  color: transparent;
+  background-image: linear-gradient(90deg, #503, #f09);
+  -webkit-background-clip: text;
+  background-clip: text;
+}
